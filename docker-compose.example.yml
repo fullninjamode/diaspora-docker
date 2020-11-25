@@ -32,7 +32,7 @@ services:
       - /data/diaspora/public:/diaspora/public
       - ./diaspora.yml:/diaspora/config/diaspora.yml
       - ./database.yml:/diaspora/config/database.yml
-     depends_on:
+    depends_on:
       - postgres
       - redis
     networks:
